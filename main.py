@@ -15,7 +15,7 @@ class ResponseModel(BaseModel):
     output: str
 
 @app.post("/translate")
-async def translate_text(request: RequestModel) -> dict[str, Any]:
+async def translate_text(request: RequestModel) -> RequestModel:
     language = request.language
     sentence = request.sentence
     message = "Explain each word from the text as the same original language " + language + " of this text: " + sentence

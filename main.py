@@ -5,7 +5,7 @@ import openai
 
 app = FastAPI()
 
-openai.api_key = "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"
+openai.api_key = "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"
 
 class RequestModel(BaseModel):
     language: str
